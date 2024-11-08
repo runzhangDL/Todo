@@ -11,6 +11,9 @@
 		50F9EC522CC4A800004883BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9EC512CC4A800004883BB /* ContentView.swift */; };
 		50F9EC542CC4A802004883BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50F9EC532CC4A802004883BB /* Assets.xcassets */; };
 		50F9EC572CC4A802004883BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50F9EC562CC4A802004883BB /* Preview Assets.xcassets */; };
+		50F9EC5E2CC4ADDA004883BB /* DailyTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9EC5D2CC4ADDA004883BB /* DailyTasks.swift */; };
+		50F9EC602CC5530D004883BB /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9EC5F2CC5530D004883BB /* AddTaskView.swift */; };
+		50F9EC652CC5EB5F004883BB /* ComicSansMSBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50F9EC642CC5EB03004883BB /* ComicSansMSBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,10 @@
 		50F9EC512CC4A800004883BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		50F9EC532CC4A802004883BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50F9EC562CC4A802004883BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		50F9EC5D2CC4ADDA004883BB /* DailyTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTasks.swift; sourceTree = "<group>"; };
+		50F9EC5F2CC5530D004883BB /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		50F9EC642CC5EB03004883BB /* ComicSansMSBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ComicSansMSBold.ttf; sourceTree = "<group>"; };
+		50F9EC662CC5EC61004883BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +58,14 @@
 		50F9EC4E2CC4A800004883BB /* Todo */ = {
 			isa = PBXGroup;
 			children = (
+				50F9EC662CC5EC61004883BB /* Info.plist */,
+				50F9EC612CC5EA73004883BB /* font */,
 				50F9EC4F2CC4A800004883BB /* TodoApp.swift */,
 				50F9EC512CC4A800004883BB /* ContentView.swift */,
 				50F9EC532CC4A802004883BB /* Assets.xcassets */,
 				50F9EC552CC4A802004883BB /* Preview Content */,
+				50F9EC5D2CC4ADDA004883BB /* DailyTasks.swift */,
+				50F9EC5F2CC5530D004883BB /* AddTaskView.swift */,
 			);
 			path = Todo;
 			sourceTree = "<group>";
@@ -65,6 +76,14 @@
 				50F9EC562CC4A802004883BB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		50F9EC612CC5EA73004883BB /* font */ = {
+			isa = PBXGroup;
+			children = (
+				50F9EC642CC5EB03004883BB /* ComicSansMSBold.ttf */,
+			);
+			path = font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +146,7 @@
 			files = (
 				50F9EC572CC4A802004883BB /* Preview Assets.xcassets in Resources */,
 				50F9EC542CC4A802004883BB /* Assets.xcassets in Resources */,
+				50F9EC652CC5EB5F004883BB /* ComicSansMSBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +159,8 @@
 			files = (
 				50F9EC522CC4A800004883BB /* ContentView.swift in Sources */,
 				50F9EC502CC4A800004883BB /* TodoApp.swift in Sources */,
+				50F9EC5E2CC4ADDA004883BB /* DailyTasks.swift in Sources */,
+				50F9EC602CC5530D004883BB /* AddTaskView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +297,8 @@
 				DEVELOPMENT_TEAM = 89YF9TKLF2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Todo/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +328,8 @@
 				DEVELOPMENT_TEAM = 89YF9TKLF2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Todo/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
